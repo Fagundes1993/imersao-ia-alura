@@ -1,0 +1,36 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-1.5-pro-latest",
+    "candidateCount": 1,
+    "topP": 0.95,
+    "maxOutputTokens": 8192,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }],
+    "responseMimeType": "text/plain"
+  },
+  "multiturnPrompt": {
+    "primingExchanges": [{
+      "source": "USER",
+      "id": "9B740028-7B36-4286-AA17-29D2C49BC7BE"
+    }],
+    "sessions": [{
+    }],
+    "userInput": "\u003cdiv class\u003d\"document-embed drive-embed\" data-drive-file-name\u003d\"history_week.csv\" data-drive-file-id\u003d\"1CQVrMjPCWF-qQrDKswwmYYCD14PZdUtO\" data-drive-file-or-folder-id\u003d\"1CQVrMjPCWF-qQrDKswwmYYCD14PZdUtO\" data-drive-folder-name\u003d\"\" data-blot-name\u003d\"document-embed\" contenteditable\u003d\"false\"\u003e\u003cdiv class\u003d\"inner-container\"\u003e\u003cspan class\u003d\"document-embed-loading google-symbols\"\u003eprogress_activity\u003c/span\u003e\u003cspan class\u003d\"document-embed-icon material-symbols-outlined\" aria-hidden\u003d\"true\"\u003edocs\u003c/span\u003e\u003cspan class\u003d\"document-embed-label gmat-body-medium truncate\" title\u003d\"history_week.csv\" alt\u003d\"history_week.csv\" aria-label\u003d\"history_week.csv\"\u003ehistory_week.csv\u003c/span\u003e\u003cspan class\u003d\"document-embed-token-count gmat-body-medium\"\u003e302313 Tokens\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e Fornece estatisticas sobre o histórico de uso de internet"
+  },
+  "systemInstruction": {
+    "text": "Faça uma analise do histõrico de navegação ",
+    "role": "user"
+  }
+}

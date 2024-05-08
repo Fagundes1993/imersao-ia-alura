@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Questões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Questões</h1>
+
+    <form id="formCadastro">
+        <div class="campo">
+            <label for="enunciado">Enunciado:</label>
+            <input type="text" id="enunciado" name="enunciado" required>
+        </div>
+
+        <div class="campo">
+            <label for="alternativaA">Alternativa A:</label>
+            <input type="text" id="alternativaA" name="alternativaA" required>
+        </div>
+
+        <div class="campo">
+            <label for="alternativaB">Alternativa B:</label>
+            <input type="text" id="alternativaB" name="alternativaB" required>
+        </div>
+
+        <div class="campo">
+            <label for="alternativaC">Alternativa C:</label>
+            <input type="text" id="alternativaC" name="alternativaC" required>
+        </div>
+
+        <div class="campo">
+            <label for="alternativaD">Alternativa D:</label>
+            <input type="text" id="alternativaD" name="alternativaD" required>
+        </div>
+
+        <div class="campo">
+            <label for="respostaCorreta">Resposta Correta:</label>
+            <select id="respostaCorreta" name="respostaCorreta" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="mensagem"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
