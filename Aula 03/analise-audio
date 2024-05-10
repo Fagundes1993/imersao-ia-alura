@@ -1,0 +1,42 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-1.5-pro-latest",
+    "candidateCount": 1,
+    "topP": 0.95,
+    "maxOutputTokens": 8192,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }],
+    "responseMimeType": "text/plain"
+  },
+  "multiturnPrompt": {
+    "primingExchanges": [{
+      "source": "USER",
+      "id": "7D3ADBB7-D8A2-4409-B9FD-D139232A452F"
+    }],
+    "sessions": [{
+      "sessionExchanges": [{
+        "request": "\u003cdiv class\u003d\"audio-embed drive-embed\" data-drive-file-name\u003d\"Recorded Audio May 09, 2024 - 8:55PM.ogg\" data-drive-file-id\u003d\"1PDHO21Q_ij7Nba7vmjJ2U9x9vAlvV0kx\" data-blot-name\u003d\"audio-embed\" contenteditable\u003d\"false\"\u003e\u003cdiv class\u003d\"inner-container\"\u003e\u003cspan class\u003d\"material-symbols-outlined audio-file-icon\" aria-hidden\u003d\"true\"\u003eaudio_file\u003c/span\u003e\u003cspan class\u003d\"document-embed-loading google-symbols\"\u003eprogress_activity\u003c/span\u003e\u003cspan class\u003d\"audio-embed-label gmat-body-medium truncate\" title\u003d\"Recorded Audio May 09, 2024 - 8:55PM.ogg\" alt\u003d\"Recorded Audio May 09, 2024 - 8:55PM.ogg\" aria-label\u003d\"Recorded Audio May 09, 2024 - 8:55PM.ogg\"\u003eRecorded Audio May 09, 2024 - 8:55PM.ogg\u003c/span\u003e\u003cspan class\u003d\"document-embed-token-count gmat-body-medium\"\u003e1312 tokens\u003c/span\u003e\u003c/div\u003e\u003c/div\u003eEncontre a palavra fora de contexto do audio.",
+        "response": "A palavra fora de contexto no áudio é \u0026quot;filé à parmegiana\u0026quot;. \n\nO áudio está falando sobre o início da temporada de Fórmula 1 de 2024 e como ela está diferente da temporada de 2023, com a Red Bull não dominando como antes e outras equipes como Ferrari e McLaren conquistando vitórias. \n",
+        "source": "MODEL",
+        "id": "D5AFE557-07A3-42A0-AC51-5465C1812E3F"
+      }, {
+        "request": "Transcreva o audio em texto.",
+        "response": "A temporada de Fórmula 1 no ano 2024, ela começou de uma maneira diferente da temporada de 2023. Eh, a Red Bull, equipe dominante do ano passado, ela já conta com dois GPs que não ganhou. A primeira vitória foi da Ferrari, com Carlos Sainz, e a segunda vitória foi a a última prova com o Lando Norris, eh, da McLaren. A tendência é que a gente tenha um campeonato mais disputado. Eh, filé à parmegiana. A Fórmula 1 tem sido uma categoria muito competitiva nos últimos anos. \n",
+        "source": "MODEL",
+        "id": "A36A3578-A240-4CC6-AB15-5C698D6EA443"
+      }]
+    }]
+  }
+}
